@@ -19,6 +19,8 @@ body {
   position: relative;
 }
 
+/* BEFORE */
+
 .spade:before {
   position: absolute;
   top: 20px;
@@ -49,6 +51,8 @@ body {
   font-size: 80px;
   content: "\2663";
 }
+
+/* AFTER */
 
 .spade:after {
   position: absolute;
