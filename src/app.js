@@ -6,8 +6,8 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector(".card").classList.add(generateRandomSuit());
   document.querySelector(".card").innerHTML = generateRandomNumber();
+  document.querySelector(".card").classList.add(generateRandomSuit());
 };
 
 let generateRandomNumber = () => {
@@ -33,5 +33,6 @@ let generateRandomNumber = () => {
 let generateRandomSuit = () => {
   let suit = ["diamond", "spade", "heart", "club"];
   let indexSuit = Math.floor(Math.random() * suit.length);
+  console.log(suit[indexSuit]);
   return suit[indexSuit];
 };
